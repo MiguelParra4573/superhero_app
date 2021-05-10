@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBarPrivate from "./ui/NavBarPrivate"
+import FooterPrivate from "./ui/FooterPrivate"
 
 const SearchScreen = () => {
     return (
         <div>
+            <NavBarPrivate/>
             <div className="col-5">
                 <h4> Search Form </h4>
                 <hr />
@@ -16,7 +19,7 @@ const SearchScreen = () => {
                         autoComplete="off"
                         // value={ searchText }
                         // onChange={ handleInputChange }
-                    />
+                        />
 
                     <button
                         type="submit"
@@ -24,9 +27,14 @@ const SearchScreen = () => {
                     >
                         Search...
                     </button>
+
                 </form>
+                    {/* TODO: Diseño de la pantalla de busqueda de los heroes */}
+                    
+
             </div>
             
+            <FooterPrivate/>
         </div>
     )
 }

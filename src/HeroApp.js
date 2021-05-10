@@ -1,17 +1,15 @@
-import './App.css';
+import { Provider } from 'react-redux'
+
 import AppRouter from "./routers/AppRouter";
+import './App.css';
+
+import { store } from "./store/store";
 
 function HeroApp() {
   return (
-    <>
-      <hi>Hero APP</hi>
-      
-      <AppRouter/>
-      
-
-
-    </>
+      <Provider store={store}>
+        <AppRouter/>
+      </Provider>
   );
 }
-
 export default HeroApp;
